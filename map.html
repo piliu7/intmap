@@ -126,7 +126,7 @@ var cityCircle;
 function initialize() {
   // Create the map.
   var mapOptions = {
-    zoom: 16,
+    zoom: 15,
     center: new google.maps.LatLng(42.055675,-87.676794),
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
@@ -138,10 +138,10 @@ function initialize() {
   // Note: We scale the population by a factor of 20.
   for (var city in citymap) {
     var populationOptions = {
-      strokeColor: '#FF0000',
-      strokeOpacity: 0.8,
+      strokeColor: 'purple',
+      strokeOpacity: 0.5,
       strokeWeight: 2,
-      fillColor: '#FF0000',
+      fillColor: 'purple',
       fillOpacity: 0.35,
       map: map,
       center: citymap[city].center,
